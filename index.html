@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="This is my attractive protfolio website">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- bootstap css end -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <!-- My own css  -->
+    <link rel="stylesheet" type="text/CSS" href="style.css" />
+    <title>My Protfolio</title>
+  </head>
+  <body>
+    <!----------------------------------------------------- navbar section------------------------------------------------------------------------>
+    <nav id="navbar-section" class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container d-flex justify-content-between">
+        <div>
+          <a class="navbar-brand" href="#">
+            <img src="assets/logo.png" width="80px" height="50px" />
+            Port<span style="color: black">folio.</span></a
+          >
+        </div>
+        <div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Education & Achievement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+              </li>
+              <!-- login btn in navbar -->
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Log in
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <h5>
+                        <span style="color: rgb(247, 73, 102)">L</span>OGIN
+                      </h5>
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Email address</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            placeholder="Enter Your Email"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <div class="d-flex justify-content-between">
+                            <label
+                              for="exampleInputPassword1"
+                              class="form-label"
+                              >Password</label
+                            >
+                            <div>
+                              <a
+                                href="#"
+                                style="color: blue; text-decoration: none"
+                                target="blank"
+                                >Forgot password?
+                              </a>
+                            </div>
+                          </div>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="exampleInputPassword1"
+                            placeholder="Enter Password"
+                            required
+                          />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <button
+                            type="submit"
+                            id="form-signin-btn"
+                            class="btn"
+                          >
+                            <i
+                              id="signin-icon"
+                              class="fa fa-sign-in"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp; Sign in
+                          </button>
+                        </div>
+                        <b>Don't have any account?</b>
+                        <a
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                          href="#exampleModal2"
+                          style="color: rgb(247, 73, 102)"
+                          target="blank"
+                        >
+                          Create Account
+                        </a>
+                        <br />
+                        <br />
+                        <b>Or login with</b>&nbsp;&nbsp;
+                        <a id="email-icon" href="mailto:srishtijais02@gmail.com"><i id="email-icon"class="fa fa-envelope" aria-hidden="true"></i></a>&nbsp;
+                        &nbsp;&nbsp;
+                      
+                       <a id="linkedin-icon" href=" https://www.linkedin.com/in/srishti-jaiswal-b46468210/">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+                        &nbsp;
+                        <a href="https://github.com/SrishJais"
+                          ><i
+                            id="github-icon"
+                            class="fa fa-github"
+                            aria-hidden="true"
+                          ></i
+                        ></a>
+                        <br />
+                        <div class="d-flex justify-content-end">
+                          <button
+                            type="button"
+                            class="btn btn-danger"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </form>
+                      <!-- login section end -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!------------------------------------------------------------ landing page of protfolio-------------------------------------------------------------->
+    <main>
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h4 class="text-center mt-5 pl-5 mx-3 pr-2">
+            "<span style="color: rgb(247, 73, 102)">W</span>eb designing is
+            brain power made visible"<br />
+            "<span style="color: rgb(247, 73, 102)">I</span>magination bleeds
+            from the pen of creativity"
+          </h4>
+          <div class="container" id="intro">
+            <div>
+              <h3>Welcome to my protfolio.</h3>
+              <span class="waving-hand">👋</span>
+              ,<b> This is </b>
+              <h1 style="font-weight: bolder; color: rgb(247, 73, 102)">
+                Srishti Jaiswal
+              </h1>
+              <h5>
+                And I'am a passionate
+                <span style="font-weight: bolder; color: rgb(247, 73, 102)"
+                  >front-end developer</span
+                >
+              </h5>
+              <a href="#about-me"
+                ><button type="button" class="btn btn-danger my-3">
+                  <b>About Me</b> &nbsp;<i
+                    id="scrolldown-btn"
+                    class="fa fa-arrow-down"
+                    aria-hidden="true"
+                  ></i></button
+              ></a>
+              <div>
+                <a 
+                class="contact-icons" href="mailto:srishtijais02@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>&nbsp;
+                
+                &nbsp;&nbsp;
+                <a  class="contact-icons" href="https://www.linkedin.com/in/srishti-jaiswal-b46468210/" >
+                     <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        
+                &nbsp;&nbsp;&nbsp;
+                <a class="contact-icons" href="https://github.com/SrishJais"
+                  ><i class="fa fa-github" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    <!-- -------------------------------------------------------About me section starts----------------------------------------------------------- -->
+    <section id="about-me">
+      <div>
+      <h2 class="text-center pt-5"><i class="fa fa-user" aria-hidden="true"></i> &nbsp; About <b style="color: rgb(247, 73, 102)">me</b></h2>
+      <b id="horizontal-line" style="color: rgb(247, 73, 102)">who i am</b>
+    </div>
+    <div class="container">
+      <div class="row  py-5 mt-5 d-flex justify-content-md-between" id="photo-section" >
+        <div id="myphoto" class="col-md-3 align-self-md-center">
+          <img class="img-fluid " src="assets/myphoto.jpg" width="100%">
+        </div>
+        <div id="about-text" class="col-md-7 pt-5 ">
+          <h4 style="font-weight: bolder;">I'm Srishti Jaiswal and I'm a passionate 
+            <span style="color:rgb(247, 73, 102);">front-end developer</span></h4>
+             I am a second year CSE Undegraduate student ,persuing B.Tech at Techno Main Saltlake
+              .I started with programming in c and then I started frontend in 
+             web development.I am currently learning datastructure in c.I am a quick learner,
+             self-motivated person and passionate to do coding.
+             I am very much interested to take part in debate competition ,public speaking,group discussion.
+            <div>
+            <button id="cv-btn" type="button" class="btn btn-danger my-3 ">Download CV&nbsp;<i id="download-icon" class="fa fa-download" aria-hidden="true"></i></button>
+          </div>
+        </div>
+    </div>
+    </section>
+    <!----------------------------------------------- My education and achievements section ---------------------------------------------------------->
+    <section id="my-education" >
+    <div>
+      <h2 class="text-center pt-5"><i class="fa fa-fa-book-open" aria-hidden="true"></i>
+      My<b style="color: rgb(247, 73, 102)"> education</b></h2>
+     
+      <h6 class="text-center py-2" style="color: yellow;">Education is birth right of everyone</h6>
+    </div>
+<!-- -------------------------------------------------------------------------------------------------- -->
+<div class="container mt-5">
+  <div class="row d-flex justify-content-md-evenly">
+  <div class="col-md-3 mb-4" >
+    <div class="card" style="width: 18rem;" >
+      <img src="assets/college.jpg" class="card-img-top img-fluid" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Bachelor In Technology in Computer Science</h5>
+        <p class="card-text">Techno Main Saltlake</p>
+        <h5>2021-2024 | Pursuing</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 mb-2" >
+    <div class="card" style="width: 18rem;" >
+      <img src="assets/school-image.jpg" class="card-img-top img-fluid" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Higher Secondary</h5><br>
+        <p class="card-text">Balika Siksha Sadan</p>
+        <h5>2018-2019 | Completed</h5>
+      </div>
+   
+    </div>
+  </div>
+</div>
+</div>
+<div>
+  <!-- -------------My achievements---------------- -->
+  <div id="my-achievement">
+  <h2 class="text-center pt-5"><i id="achievement-icon" class="fa fa-trophy" aria-hidden="true"></i>  
+  My<b style="color: rgb(247, 73, 102)"> achievements</b></h2>
+  <h6 class="text-center pt-2 pb-5" style="color: yellow;">Only those who dare to fail greatly can achieve greatly</h6>
+  
+    <h6 class="achievement-text">I won college-level <span style="color: rgb(247, 73, 102)">debate competition</span> in my college.<br><br>
+    <h6 class="achievement-text"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp; I got scholarship from <span  style="color: rgb(247, 73, 102)">Swami Vivekananda Merit Cum Means Scholarship</span> for higher secondary studies
+     based on academic excellence.</h6><br>
+     <h6 class="achievement-text"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;  I also got scholarship from <span  style="color: rgb(247, 73, 102)">Swami Vivekananda Merit Cum Means Scholarship</span> for undergraduation
+     based on academic excellence.</h6>
+
+  </h6>
+</div> 
+</div>
+</section>
+<!-- -----------------------------------------------------------My skills--------------------------------------- ------------------------------------->
+<section id="my-skills"class="pb-5">
+    <div>
+    <h2 class="text-center pt-5"><i id="skill-icon" class="fa fa-cogs" aria-hidden="true"></i>&nbsp;My<b style="color: rgb(247, 73, 102)"> skills</b></h2>
+    <b id="horizontal-line" style="color: rgb(247, 73, 102)">what i know</b>
+    </div>
+    <!-- programming skills accordion -->
+      <div class="container py-5">
+        <div class="row d-flex justify-content-md-between">
+          <div class="col-md-5 p-2 mb-2">
+            <div class="accordion " id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" 
+                    aria-controls="panelsStayOpen-collapseThree">
+                      <h4><i class="fa fa-code" id="code-icon"aria-hidden="true" style="color:grey;"></i>&nbsp;<span style="color:rgb(247, 73, 102);font-weight: bolder;">
+                        Programming Skills</span></h4>
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <div class="text-progress">
+                        <h4 class="accordion-text"><i class="devicon-c-plain-wordmark colored webdev-icon"></i>&nbsp;C language</h4>
+                      <div class="progress my-3" style="height: 7px;">
+                        <div id="clanguage"class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="text-progress">
+                      <h4 class="accordion-text">Datastructure through C</h4>
+                      <div class="progress my-3"  style="height: 7px;">
+                        <div id="datastructure"class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h6 class="p-4 mt-3">I believe that there are much more things to learn further........... </h6>
+          </div>
+      <!-- front-end accordion -->
+          <div class="col-md-5 p-2 mb-2">
+            <div class="accordion " id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" 
+                    aria-controls="panelsStayOpen-collapseThree">
+                    <h4><span style="color:rgb(247, 73, 102);font-weight: bolder;"><span id="frontend-icon">{ }</span>&nbsp;
+                      Frontend Developing Skills</span></h4>
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <div class="text-progress">
+                        <h4 class="accordion-text"><i class="devicon-html5-plain-wordmark colored webdev-icon"></i>&nbsp;HTML</h4>
+                        <div class="progress my-3"  style="height: 7px;">
+                          <div id="html" class="progress-bar  " role="progressbar" style="width: 95%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    <div class="text-progress">
+                      <h4 class="accordion-text"><i class="devicon-css3-plain-wordmark colored webdev-icon"></i>&nbsp;CSS</h4>
+                      <div class="progress my-3"  style="height: 7px;">
+                        <div id="css"class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="50" 
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="text-progress">
+                      <h4 class="accordion-text"><i class="devicon-bootstrap-plain-wordmark colored webdev-icon"></i>&nbsp;Bootstrap</h4>
+                    <div class="progress my-3" style="height:7px;">
+                      <div id="bootstrap"class="progress-bar " role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                    <div class="text-progress">
+                      <h4 class="accordion-text"><i class="devicon-javascript-plain colored webdev-icon" ></i>&nbsp;Javascript</h4>
+                    <div class="progress my-3" style="height:7px;">
+                      <div id="javascript" class="progress-bar  " role="progressbar" style="width:40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+            
+      </div>
+    </div>
+  </section>
+  <!-- ---------------------------------------------------------------------Contact page------------------------------------------------------ -->
+    <section id="contact-us"class="pb-2">
+      <div>
+      <h2 class="text-center pt-5">&nbsp;Contact<b style="color: rgb(247, 73, 102)"> me</b></h2>
+      <b id="horizontal-line" style="color: rgb(247, 73, 102)">get in touch</b>
+      </div>
+    <div class="container pt-5">
+      <div class="row d-flex justify-content-between">
+
+      <div class="col-md-5 pt-2 m-3">
+            <div class="row">
+              <div class="col pb-4">
+                <h4 style="color: rgb(247, 73, 102)">Get in touch</h4>
+                 <p>Even though we are far away from each other,you can still contact me via phone or you can send your queries though e-mail
+                  </p>
+              </div>
+            </div>
+      
+            <div class="row contact-icon-text m-3 pt-2">
+              <div class="col-md-1 p-1 contact-icon p-2  align-self-md-center ">
+                <a id="phone" href="tel:+6289200091"><i id="phone-icon"class="fa fa-phone" aria-hidden="true"></i></a>&nbsp;
+              </div>
+              <div class="col ">
+                <h5 style="color: rgb(247, 73, 102)">Phone no.</h5>
+               <p>6289200091</p>
+              </div>
+            </div>
+            <div class="row contact-icon-text m-3 pt-2">
+              <div class="col-md-1 p-1 contact-icon p-2  align-self-md-center ">
+                <a id="email" href="mailto:srishtijais02@gmail.com"><i id="email-icon"class="fa fa-envelope" aria-hidden="true"></i></a>&nbsp;
+              </div>
+              <div class="col ">
+                <h5 style="color: rgb(247, 73, 102)">Email</h5>
+                <p>srishtijais02@gmail.com</p>
+              </div>
+            </div>
+            <div class="row contact-icon-text m-3 pt-2">
+              <div class="col-md-1 p-1 contact-icon p-2  align-self-md-center ">
+                <a id="location" href="https://goo.gl/maps/BGwZzXiVeNCqa3d16"><i id="location-icon"class="fa fa-map-marker" aria-hidden="true"></i></a>&nbsp;
+              </div>
+              <div class="col">
+                <h5 style="color: rgb(247, 73, 102)">Address</h5>
+                <p>Kolkata,West Bengal<br>
+                  India,700067</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+          <div id="center">
+            <h3 class="p-2 text-center" ><span style="color: rgb(247, 73, 102)">M</span>essage me</h3>
+          </div>
+          <form>
+            <div class="mb-3">
+              <div>
+                <label  class="form-label"><b>Name</b></label >
+              </div>
+              <input type="text"   class="form-control"  placeholder="Enter Name" required />
+             
+            </div>
+           
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"><b>Email address</b></label>
+
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email" required  />
+            </div>
+            <div class="mb-3">
+              <div>
+                <label  class="form-label"><b>Subject</b></label >
+              </div>
+              <input type="text"  class="form-control"   placeholder="Enter Password" required />
+             
+            </div>
+            <div class="mb-3">
+              <div>
+                <label class="form-label"><b>Messages</b></label >
+              </div>
+              <textarea class="form-control"  placeholder="Enter Password" required ></textarea>
+             
+            </div>
+            <div class="d-flex justify-content-end">
+              <button  type="submit" class="btn btn-danger m-4"><b>Send</b>&nbsp;<i id="submit-icon"class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>  
+  </section>         
+    <!-- --------------------------footer----------------------------------------- -->
+    <footer class="p-5">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 pb-5">
+      <h4 style="color: rgb(247, 73, 102)">Srishti's Protfolio</h4>
+          <h6 class="pt-5">This protfolio website is designed by <b  style="color: rgb(247, 73, 102)">Srishti Jaiswal.</b><br>
+            Thank you for visiting my protfolio website</h6>
+    </div>
+    <div class="col-md-4">
+      <h4 style="color: rgb(247, 73, 102)" class="pb-3"><u>Quic</u>k Links</h4>
+      <h6><a class="quick-links" href="#navbar-section">Home</a><br>
+        <a class="quick-links " href="#about-me"> About</a><br>
+        <a class="quick-links " href="#my-education">Education & Achievement</a><br>
+        <a class="quick-links " href="#my-skills">Skills</a><br>
+        <a class="quick-links " href="#contact-us">Contact</a></h6>
+    </div>
+    <div class="col-md-3 class="text-center">
+      <div class="text-center mb-3 mt-3">
+      <i   id="socialmedia-icon" class="fa fa-users" aria-hidden="true"></i>
+    </div>
+    <div  class="text-center">
+     <p> Connect with me over social medias</p>
+    </div>
+    <div class="text-center">
+     <a id="email-icon" href="mailto:srishtijais02@gmail.com"><i id="email-icon"class="fa fa-envelope" aria-hidden="true"></i></a>&nbsp;
+     &nbsp;&nbsp;
+     
+     <a id="linkedin-icon" href=" https://www.linkedin.com/in/srishti-jaiswal-b46468210/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    
+     &nbsp;
+     <a href="https://github.com/SrishJais"
+       ><i
+         id="github-icon"
+         class="fa fa-github"
+         aria-hidden="true"
+       ></i
+     ></a>
+    </div>
+    </div>
+    <div class="row pt-3">
+      <div class="col text-center">
+        <i class="fa fa-copyright" aria-hidden="true"></i>2021 Srishti Jaiswal | All rights reserved
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+
+
+
+    
+    
+
+     
+
+
+
+
+
+
+
+  
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
