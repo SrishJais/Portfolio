@@ -1,2 +1,2 @@
 # Protfolio
-  Tap  here for preview of my protfolio website
+ https://srishjais.github.io/Portfolio/ Tap  here for preview of my protfolio website
