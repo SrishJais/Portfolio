@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 /* -------------------------------------------------------------navbar section------------------------------------------------------------------------ */
 .navbar-brand,
 .navbar-dark .navbar-nav .nav-link {
@@ -19,11 +21,13 @@ html {
   background-color: black;
   border: 0px solid grey;
 }
+
 .navbar-dark .navbar-nav .nav-link:hover {
   color: white;
   background-color: black;
   border-radius: 10px;
 }
+
 .navbar-dark .navbar-nav .nav-link:focus {
   color: white;
   background-color: black;
@@ -31,11 +35,13 @@ html {
   border: 2px solid grey;
   border-radius: 10px;
 }
+
 /* login button */
 nav .btn-dark {
   border: 4px solid grey;
   border-radius: 10px;
 }
+
 /* --------------Sign in form---------------*/
 .modal-body h5 {
   color: black;
@@ -44,6 +50,7 @@ nav .btn-dark {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 /* sign in btn */
 #form-signin-btn {
   background-color: rgb(247, 73, 102);
@@ -52,78 +59,95 @@ nav .btn-dark {
   font-weight: bolder;
   margin-bottom: 10px;
 }
+
 /* signin icon */
 #signin-icon {
   color: black;
 }
+
 /* email icon */
 #email-icon {
   color: #4285f4;
   font-size: xx-large;
 }
+
 /* facebook icon */
 #facebook-icon {
   color: #4267b2;
   font-size: xx-large;
 }
+
 /* linkedin icon  */
 #linkedin-icon {
   color: #0e76a8;
   font-size: xx-large;
 }
+
 /* github icon  */
 #github-icon {
   color: #171515;
   font-size: xx-large;
 }
+
 .modal-content {
   background-color: #f1f1f1;
 }
+
 nav form label {
   color: rgb(247, 73, 102);
   font-weight: bolder;
 }
+
 .form-control {
   border: 3px solid black;
 }
+
 .form-control:focus {
   color: grey;
   outline: 0;
   border: 0px;
   box-shadow: 0 0 0 0.25rem rgb(247, 73, 102);
 }
+
 /* -------------------------------------------------------------------landing page starts-----------------------------------------------------------*/
-.carousel-item {
+#sliderbg {
   background-image: url("assets/gif-web-backgrounds-3.gif");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 685px;
 }
-.carousel-item h4,
-.carousel-item #intro {
+
+#sliderbg h4,
+#sliderbg #intro {
   color: white;
 }
+
 .waving-hand {
   animation: wave 2.1s 0.6s infinite;
   transform-origin: 75% 75%;
   display: inline-block;
 }
-.carousel-item #intro {
+
+#sliderbg #intro {
   align-items: center;
   display: flex;
   height: 75%;
   padding: 30px;
 }
+
 #scrolldown-btn {
   color: black;
 }
+
 .contact-icons {
   color: #edf4f5;
   font-size: xx-large;
 }
+
 .contact-icons:hover {
   color: rgb(247, 73, 102);
 }
+
 /* ---------------------------------------------------------About me section starts---------------------------------------------------------------- */
 #horizontal-line::before,
 #horizontal-line::after {
@@ -133,46 +157,55 @@ nav form label {
   margin: auto;
   border-bottom: 2px solid black;
 }
+
 #horizontal-line {
   display: flex;
   flex-direction: row;
 }
+
 #horizontal-line:before,
 #horizontal-line:after {
   content: "";
   flex: 1 1;
   width: 10px;
 }
+
 #about-me .container #myphoto {
   --bs-gutter-x: 0;
 }
+
 #about-me #photo-section {
   padding: 0 30px;
 }
+
 #about-me #myphoto {
   box-shadow: 0px 10px 10px 0px rgb(71, 68, 68);
   background-color: transparent;
   border-radius: 5px;
 }
+
 #about-me img {
   object-fit: cover;
   height: auto;
 }
+
 #about-text {
   word-wrap: break-word;
   overflow: auto;
-  padding-right: 40px;
-  padding-left: 40px;
 }
+
 #cv-btn {
   font-weight: bolder;
 }
+
 #cv-btn:focus {
   box-shadow: 0 0 0 0.25rem black;
 }
+
 #download-icon {
   color: black;
 }
+
 /* ----------------------------------------------------My education and achievement section-------------------------------------------------------------------------*/
 #my-education {
   background-color: black;
@@ -184,69 +217,101 @@ nav form label {
 #my-education .card-title {
   color: rgb(247, 73, 102);
 }
+
 #my-education .card-text {
   font-weight: bold;
   color: rgb(88, 88, 88);
 }
+
 #my-education .card-body {
   background-color: black;
   color: white;
 }
+
 .img-fluid {
   height: 200px;
 }
+
 #my-achievement {
   padding: 20px;
 }
+
 #achievement-icon {
   font-weight: bold;
 }
+
 .achievement-text {
   margin-left: 30px;
 }
+
+.achievementHeading {
+  color: rgb(247, 73, 102);
+  font-weight: bold;
+}
+
 /* ---------------------------------------------------------------My skills-----------------------------------------------------------------  */
+#my-achievement {
+  background-color: black;
+  color: white;
+}
+
+.achievementItem {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
 #skill-icon {
-  background-color: rgb(22, 4, 65);
-  color: #edf4f5;
   font-size: 38px;
   font-weight: bold;
   border-radius: 50%;
 }
+
 #code-icon {
   font-weight: bold;
   font-size: xx-large;
 }
+
 #frontend-icon {
   color: white;
   font-weight: bold;
   font-size: xx-large;
 }
+
 #clanguage {
   background-color: rgb(26, 26, 143);
 }
+
 #html {
   background-color: orangered;
 }
+
 #css {
   background-color: rgb(40, 102, 236);
 }
+
 #bootstrap {
   background-color: purple;
 }
+
 #javascript {
   background-color: yellow;
 }
+
 .webdev-icon {
   font-size: 38px;
   background-color: white;
   border-radius: 2px;
 }
+
 .accordion-text {
   color: white;
 }
+
 .accordion-item {
   box-shadow: 0px 10px 10px 0px rgb(90, 86, 86);
 }
+
 .text-progress {
   background-color: black;
   margin: 10px;
@@ -254,54 +319,67 @@ nav form label {
   padding: 10px;
   border-radius: 10px;
 }
+
 .accordion-body {
   background-color: rgb(247, 73, 102);
 }
+
 .accordion-button:not(.collapsed) {
   /* color: #0c63e4; */
   background-color: black;
   /* box-shadow: inset 0 -1px 0 grey; */
 }
+
 .accordion-button {
   background-color: black;
   color: white;
 }
+
 .accordion-button:focus {
   border-color: grey;
   outline: 0;
   box-shadow: 0 0 0 0.25rem grey;
 }
+
 .accordion-button:not(.collapsed)::after {
   color: white;
 }
+
 .accordion-button::after {
   background-color: white;
 }
+
 .accordion-button:not(.collapsed)::after {
   background-color: white;
 }
+
 /*------------------------------------------------------------------- contact us-------------------------------------------------------------------- */
 textarea {
   resize: none;
   overflow: auto;
 }
+
 section form label {
   color: rgb(247, 73, 102);
   font-weight: bolder;
 }
+
 #contact-us {
   background-color: #f1f1f1;
 }
+
 section .form-control {
   color: black;
   font-weight: 700;
   border: 4px solid grey;
   box-shadow: 0px 8px 8px 0px rgb(168, 166, 166);
 }
+
 section .form-control:focus {
   background-color: black;
   color: white;
 }
+
 section #phone-icon,
 section #email-icon,
 section #location-icon {
@@ -314,36 +392,46 @@ section #submit-icon {
   color: black;
   font-weight: bold;
 }
+
 #phone,
 #email,
 #location {
   color: black;
   text-decoration: none;
 }
+
 .contact-icon-text {
   box-shadow: 0px 5px 5px 0px grey;
+  background-color: white;
+  border-radius: 5px;
 }
+
 /*------------------------------------------------------------------------ footer------------------------------------------------------------------- */
 footer {
   background-color: black;
   color: white;
 }
+
 .quick-links {
   text-decoration: none;
   color: white;
   margin-bottom: 10px;
 }
+
 .quick-links:hover {
   color: rgb(247, 73, 102);
 }
+
 .quick-links:focus {
   color: grey;
 }
+
 footer #email-icon,
 footer #linkedin-icon,
 footer #github-icon {
   color: rgb(247, 73, 102);
 }
+
 #socialmedia-icon {
   color: rgb(247, 73, 102);
   font-weight: bold;
@@ -352,32 +440,85 @@ footer #github-icon {
   padding: 5px;
 }
 
+/*------------------------------------------------------ certificate section----------------------------------------------- */
+
+/* ____swipper.js ____ */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 100%;
+}
+
+.certificateItem {
+  border: 3px solid black;
+}
+
+/*----- next, prev btn styling-------*/
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: rgb(208, 208, 208);
+  font-weight: bolder;
+  width: 50px;
+  border-radius: 50%;
+  opacity: 10;
+}
+
+.mySwiper [class^="swiper-button-"]::after {
+  font-size: 30px;
+}
+
+.mySwiper [class^="swiper-button-"] {
+  width: 100px;
+}
+
+/* --------------------------------swipper end------------------------ */
 @keyframes wave {
   0% {
     transform: rotate(0deg);
   }
+
   10% {
     transform: rotate(16deg);
   }
+
   20% {
     transform: rotate(-6deg);
   }
+
   30% {
     transform: rotate(16deg);
   }
+
   40% {
     transform: rotate(-4deg);
   }
+
   50% {
     transform: rotate(16deg);
   }
+
   60% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
 }
+
 @media (min-width: 0px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.5rem;
